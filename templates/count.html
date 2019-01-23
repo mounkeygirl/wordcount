@@ -1,0 +1,18 @@
+<h1>There are {{count}} words</h1>
+<a href="{% url 'home' %}">Start again</a>
+
+<h2>Full Text: </h2>
+{{fulltext}}
+
+<h1>Word Count:</h1>
+<!-- {{worddictionary}} -->
+
+  {% for word, counttotal in sortedWords %}
+
+{{word}}: {{counttotal}}
+<br/>
+
+<br/>
+
+
+{% endfor %}
